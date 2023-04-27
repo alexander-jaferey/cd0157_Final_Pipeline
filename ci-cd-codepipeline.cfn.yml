@@ -62,6 +62,21 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a kubectl IAM role
 
+  AwsSecretAccessKey:
+    Type: String
+    NoEcho: true
+    Description: AWS secret access key
+    MinLength: 3
+    MaxLength: 100
+    ConstraintDescription: You must enter an AWS secret access key
+
+  AwsAccessKeyId:
+    Type: String
+    NoEcho: true
+    Description: AWS access key ID
+    MinLength: 3
+    MaxLength: 100
+    ConstraintDescription: You must enter an AWS access key ID
 
 Metadata:
   AWS::CloudFormation::Interface:
